@@ -25,7 +25,7 @@ motd = "iKu Original Adult - 2020/03/28"
 ## salesman <true,false>; 仅提示输入一项内容ID
 salesman = false
 ## exit <true,false>; 执行完成后窗口就退出了
-exit = true
+exit = false
 ## beep <true,false>; 在提示选择视频时发出声音（响铃字符）
 beep = false
 
@@ -33,9 +33,9 @@ beep = false
 ## 文件{suffix}数.文件扩展（例如：test-1.mp4, test-2.mp4 ..）
 suffix = "-"
 ## 多个视频part合并成一个
-merge = false
+merge = true
 ## 多个视频part合并成一个（M3U文件）
-m3u_merge = false
+m3u_merge = true
 ## 根据文件名合并part（正则表达式）
 m3u_regex = '(.*?)-(?:[Pp]art-?)?(\d+)'
 ## 合并之前，检查列出的M3U文件是否互相兼容（只有大咪咪）
@@ -58,7 +58,7 @@ ffmpeg_log = false
 ## 值太高可能会减慢下载速度
 ## 视频高清（3MB 分片）：16 (~50 MB/s), 32 (~100 MB/s)
 ## -> 默认值：16
-job = 32
+job = 64
 ## buffer <1-..>; 视频码流缓冲区的大小（分片数量）
 ## 高达视频缓冲时，下载器可容纳多少个分片
 ## 这个值是跟同时下载数量 {job} 相关的
