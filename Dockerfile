@@ -20,6 +20,7 @@ RUN apk update && apk add --no-cache \
     bash \
     curl \
     rclone \
+    nano \
     zlib \
     ts \
     openssh && \
